@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Education</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th> Education </th>
+            <th> Am invatat multe </th>
+        </tr>
+    </thead>
+    <tbody>
+	<p>titlu</p>
+        <tr th:each="Education : ${education}">
+            <td><span th:text="${education.education}"> Titlu</span></td>
+             
+        </tr>
+    </tbody>
+</table>
+</body>
